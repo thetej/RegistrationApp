@@ -11,7 +11,6 @@ const StepFour = ({ age, handleSliderChangeAge }) => (
       <div className="genericSlider genericSlider--age">
         <Slider
           aria-labelledby="track-false-slider"
-          defaultValue={age}
           onChange={handleSliderChangeAge}
           name="age"
         />
