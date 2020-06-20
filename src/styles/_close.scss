@@ -1,0 +1,35 @@
+.close {
+  width: 6.5rem;
+  height: 6.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0px 0px 50px 0px;
+  -moz-border-radius: 0px 0px 50px 0px;
+  -webkit-border-radius: 0px 0px 50px 0px;
+  color: $mediumGrey;
+  background: url(../assets/icon-cross.svg) 15px no-repeat;
+  background-size: 40%;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  text-indent: -9999px;
+}
+
+.information {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+  background: url(../assets/icon-info.svg) center no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}

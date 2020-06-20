@@ -1,0 +1,195 @@
+.regOptionContainer {
+  margin-bottom: 4rem;
+  h2 {
+    width: calc(90% - 3rem);
+    font-size: 1.6rem;
+    margin-left: 3rem;
+    position: relative;
+
+    @media (min-width: 768px) {
+      margin-left: 6rem;
+    }
+
+    .info {
+      position: absolute;
+      right: 0;
+      top: -3px;
+      font-size: 2.2rem;
+      color: $height;
+
+      .desc {
+        font-size: 75%;
+        color: $lightGrey;
+      }
+
+      &--height {
+        color: $weight;
+      }
+
+      &--age {
+        color: $weight;
+      }
+    }
+  }
+  .rulerHolder {
+    width: calc(100% - 3.5rem);
+    overflow: auto;
+    &--weight {
+      //height: 100px;
+      .MuiSlider-thumb {
+        color: $weight !important;
+
+        &:before {
+          background: $weight !important;
+        }
+      }
+
+      .MuiSlider-root {
+        @media (min-width: 768px) {
+          width: 220% !important;
+          padding: 0;
+        }
+      }
+    }
+    &--height {
+      //height: 100px;
+
+      .MuiSlider-root {
+        background: url(../assets/ruler-height.svg) top left -5px no-repeat !important;
+        background-size: 100% !important;
+        width: 250% !important;
+
+        @media (min-width: 768px) {
+          width: 150% !important;
+          padding: 0;
+        }
+      }
+
+      .MuiSlider-thumb {
+        color: $height !important;
+
+        &:before {
+          background: $height !important;
+        }
+      }
+    }
+    .MuiSlider-root {
+      background: url(../assets/ruler-big.svg) top left -5px no-repeat;
+      background-size: 100%;
+      width: 400%;
+      color: #cccccc;
+      padding-bottom: 60px;
+      @media (pointer: coarse) {
+        padding: 0 0 30px;
+      }
+    }
+    .MuiSlider-markLabel {
+      font-size: 1.2rem;
+      top: 3.5rem;
+    }
+    .MuiSlider-thumb {
+      top: 4.2rem;
+      //color: #f5b942 !important;
+
+      &:before {
+        width: 2px;
+        height: 4.7rem;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        //background: #f5b942;
+      }
+    }
+  }
+  .genericSlider {
+    width: calc(100% - 3.5rem);
+    margin-bottom: 3rem;
+
+    &--age {
+      .MuiSlider-thumb {
+        color: $age;
+      }
+      .MuiSlider-track {
+        color: $age;
+      }
+      .MuiSlider-rail {
+        color: $mediumGrey;
+      }
+    }
+  }
+}
+
+.formWrapper {
+  display: flex;
+  flex: 1;
+  background: $backgroundColor;
+  border-top-right-radius: 150px;
+  width: 90%;
+  flex-direction: column;
+  position: relative;
+}
+
+.heading {
+  margin-top: 8rem;
+  font-size: 2rem;
+  color: #d6d6d6;
+  margin-left: 3.5rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    margin-left: 6rem;
+  }
+
+  span {
+    display: block;
+    font-size: 150%;
+    color: #000000;
+  }
+}
+
+.formHolder {
+  width: 100%;
+  max-width: 600px;
+
+  .inputHolder {
+    margin: 8rem 3.5rem;
+
+    @media (min-width: 768px) {
+      margin: 8rem 6rem;
+    }
+  }
+  .error {
+    font-size: 1.4rem;
+    color: #666;
+    margin: 0;
+    padding: 1rem;
+    background: rgba($age, 0.3);
+    border-radius: 0.3rem;
+  }
+}
+
+/*Meterial UI overridden*/
+
+.MuiFormControl-root {
+  width: 100%;
+}
+
+.MuiFormLabel-root {
+  color: #c2c2c2 !important;
+  font-size: 1.4rem !important;
+}
+
+.MuiInputBase-input {
+  font-size: 2rem !important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #88c8ac !important;
+}
+
+.MuiFormControl-root {
+  margin-bottom: 4rem !important;
+  &:last-child {
+    margin-bottom: 2rem !important;
+  }
+}
