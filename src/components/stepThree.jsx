@@ -55,7 +55,6 @@ const StepThree = ({
         <Slider
           track={false}
           aria-labelledby="track-false-slider"
-          defaultValue={weight}
           marks={marks}
           onChange={handleSliderChange}
         />
@@ -73,7 +72,6 @@ const StepThree = ({
         <Slider
           track={false}
           aria-labelledby="track-false-slider"
-          defaultValue={height}
           marks={heightSelector}
           onChange={handleSliderChangeHeight}
         />
