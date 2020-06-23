@@ -181,6 +181,7 @@ class FormWrapper extends Component {
                   </span>
                 </li>
               ))}
+              <li className={`slider step-${activeStep}`}></li>
             </ul>
 
             <div className="buttonsHolder">
