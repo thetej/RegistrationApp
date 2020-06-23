@@ -33,15 +33,21 @@
     width: 7rem;
     height: 7rem;
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-3.5rem, -3.5rem);
     background: url(../assets/success-tick.svg) center no-repeat;
     background-size: 100%;
+    opacity: 0;
+    transition: all 0.7s linear;
   }
 
-  // &.show {
-  //   bottom: 0;
-  //   transition: all 0.5s ease;
-  // }
+  &.show {
+    .icon {
+      top: 50%;
+      opacity: 1;
+      transition: all 0.7s linear;
+      transition-delay: 0.2s;
+    }
+  }
 }
